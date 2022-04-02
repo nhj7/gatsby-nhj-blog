@@ -61,14 +61,16 @@ export const ThemeSwitch = () => {
     setChecked(checked)
     toggleTheme(theme)
   }
-  const win = typeof window !== `undefined` ? window : {};
-  win.matchMedia("(prefers-color-scheme: dark)").addEventListener("change"
-    , e => { handleChange(e.matches) });
 
   useEffect(() => {
     const checked = Storage.getTheme(Dom.hasClassOfBody(THEME.DARK))
     handleChange(checked)
   }, [])
+
+  if (typeof window != "undefined") {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change"
+      , e => { handleChange(e.matches) });
+  }
 
   return (
     <div className="switch-container">
