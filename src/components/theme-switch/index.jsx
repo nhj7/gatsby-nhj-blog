@@ -61,8 +61,8 @@ export const ThemeSwitch = () => {
     setChecked(checked)
     toggleTheme(theme)
   }
-
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change"
+  const win = typeof window !== `undefined` ? window : {};
+  win.matchMedia("(prefers-color-scheme: dark)").addEventListener("change"
     , e => { handleChange(e.matches) });
 
   useEffect(() => {
