@@ -29,6 +29,13 @@ export function setData(val) {
 }
 
 export function getTheme(defaultValue) {
+
+  if (getValueFromLocalStorage(`${LOCAL_STORAGE_KEY}/theme`) == undefined) {
+    const prefersDark = window.matchMedia("(prefers-color-scheme:dark)")
+      .matches;
+    defaultValue = prefersDark;
+  }
+
   return getValueFromLocalStorage(`${LOCAL_STORAGE_KEY}/theme`) || defaultValue
 }
 

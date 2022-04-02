@@ -62,9 +62,11 @@ export const ThemeSwitch = () => {
     toggleTheme(theme)
   }
 
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change"
+    , e => { handleChange(e.matches) });
+
   useEffect(() => {
     const checked = Storage.getTheme(Dom.hasClassOfBody(THEME.DARK))
-
     handleChange(checked)
   }, [])
 
