@@ -2,7 +2,7 @@ module.exports = {
   title: `N-log`,
   description: `Blog posted about ...`,
   author: `[HyungJu]`,
-  introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
+  introduction: `티스토리 블로그를 마크다운 일괄 변환해서 어색한 내용이 많습니다. 개선 중입니다`,
   siteUrl: `https://n-log.netlify.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
