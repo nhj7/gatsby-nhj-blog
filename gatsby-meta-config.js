@@ -1,6 +1,6 @@
 module.exports = {
   title: `N-log`,
-  description: `Blog posted about ...`,
+  description: `Blog posted about IT`,
   author: `[HyungJu]`,
   introduction: `티스토리 블로그를 마크다운 일괄 변환해서 어색한 내용이 많습니다. 개선 중입니다`,
   siteUrl: `https://n-log.netlify.app/`, // Your blog site url
@@ -15,8 +15,9 @@ module.exports = {
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
   comment: {
-    disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    disqusShortName: 'n-log-1', // Your disqus-short-name. check disqus.com.
+    utterances: '', // Your repository for archive comment
+    //utterances: 'nhj7/gatsby-nhj-blog', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
