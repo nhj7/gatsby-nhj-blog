@@ -8,4 +8,53 @@
   a {
     text-decoration: none !important;
   }
+
+  .shape{
+    /* display: inline-block; */
+    display:none;
+    border: solid white;
+    border-width: 1px 1px 1px 1px;
+    padding : 7px 7px 3px 7px;
+    position:fixed;
+    left:87%;
+    opacity:0.5;
+    cursor: pointer;
+  }
+
+  .shape:hover {
+    border:sold #555; /* Add a dark-grey background on hover */
+  }
+
+  .arrow {
+    border: solid white;
+    border-image: linear-gradient(to right, #6a04ee, #7a00cc,#cc007a);    
+    border-image-slice: 1;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+    
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }  
+  .up {
+    top:85%;
+  }
+  .up_arrow{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);    
+  }  
+  .down {
+    top:90%;    
+  }
+  .down_arrow{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
 }
