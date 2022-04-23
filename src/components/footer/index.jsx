@@ -8,5 +8,9 @@ export const Footer = () => (
     <a href="https://github.com/JaeYeopHan/gatsby-starter-bee">
       Gatsby-starter-bee
     </a>
+
+    <i class="shape up"><i class="arrow up_arrow" /></i>
+
+    <i class="shape down"><i class="arrow down_arrow" /></i>
   </footer>
 )
