@@ -15,3 +15,9 @@
 
 
 [gatsby-starter-bee](https://github.com/JaeYeopHan/gatsby-starter-bee)
+
+
+``` 
+$ npm start
+```
+
